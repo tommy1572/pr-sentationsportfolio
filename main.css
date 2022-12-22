@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body {
+    background-color: #eaebed;
+}
+/*header*/
+header {
+	width: 100%;
+}
+.logo{
+	display: flex;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	justify-content: center;
+}
+header nav ul {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+header nav ul li {
+	display: inline;
+ 	float: left;
+	list-style: none;
+	padding: 0 15px;
+	margin: 10px;
+}
+header nav ul li a {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #272727;
+	text-decoration: none;
+}
+.test{
+    padding: 10px 25px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    display: block;
+}
+.btn{
+    width: 125px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn span{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+	text-align: center;
+}
+.btn:before, .btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #272727;
+    transition: all 0.4s ease;
+}
+.btn:before {
+    height: 25%;
+    width: 2px;
+}
+.btn:after{
+    width: 10%;
+    height: 2px;
+}
+.btn:hover:before {
+	height: 100%;
+}
+.btn:hover:after {
+	width: 100%;
+}
+.btn span:before, .btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #272727;
+    transition: all 0.4s ease;
+}
+.btn span:before {
+    width: 2px;
+    height: 25%;
+}
+.btn span:after {
+    width: 10%;
+    height: 2px;
+}
+.btn span:hover:before {
+    height: 100%;
+}
+.btn span:hover:after {
+    width: 100%;
+}
+@media only screen and (min-width:834px) {
+	.logo{
+		margin-top: 25px;
+		margin-left: 0px;
+	}
+	header nav ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+	header nav ul li {
+		display: flex;
+		float: none;
+		list-style: none;
+		margin: 15px 25px;
+	}
+	header nav ul li a {
+		font-size: 40px;
+	}
+	.btn{
+		width: 260px;
+		height: 80px;
+		line-height: 84px;
+	}
+}
+@media only screen and (min-width:1024px) {
+	.navigation{
+		height: 169px;
+	}
+	.logo{
+		display: flex;
+		margin: 50px 50px;
+		float: left;
+	}
+	header nav ul {
+		display: flex;
+		float: right;
+		margin: 50px;
+	}
+	header nav ul li {
+		display: flex;
+		margin: 15px 50px;
+		list-style-type: none;
+	}
+}
+/*main*/
+div h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 250px;
+}
+.start-logo{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 300px;
+}
+@media only screen and (min-width:834px) {
+	div h1{
+		font-size: 80px;
+	}
+}
+/*about me*/
+.wrapper{
+	width: 100%;
+	border-top: solid 2px;
+}
+.info-aboutme{
+	text-align: center;
+}
+.info-aboutme h2 {
+	font-size: 50px;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+.info-aboutme p {
+	font-size: 15px;
+	width: 350px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	line-height: normal;
+}
+.img-me{
+	width: 350px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+@media only screen and (min-width:834px) {
+	.img-me{
+		width: 500px;
+		margin-left: 170px;
+		margin-right: 83px;
+		margin-bottom: 50px;
+	}
+	.info-aboutme p {
+		font-size: 30px;
+		width: 600px;
+		margin-left: 120px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		line-height: normal;
+	}
+}
+@media only screen and (min-width:1024px) {
+	.info-aboutme{
+		display: flex;
+		flex-direction: column;
+		float: right;
+		margin-top: 40px;
+		margin-right: 200px;
+	}
+	.img-me{
+		width: 700px;
+		margin-left: 100px;
+		margin-right: 83px;
+		margin-bottom: 50px;
+		margin: 50px;
+	}
+	.info-aboutme p {
+		width: 650px;
+		margin-left: 0;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+}
+/*Cases*/
+.title{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 10rem;
+	font-size: 60px;
+}
+div .container-1{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 5rem;
+}
+.box-info{
+	margin-top: 20px;
+	text-align: center;
+	width: 390px;
+	padding: 1vh;
+}
+.box-info h3{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.box-info p{
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+.picture-1{
+	width: 400px;	
+	margin-bottom: 15px;
+}
+@media only screen and (min-width: 834px) {
+	.picture-1{
+		width: 600px;
+	}
+}
+/*Contact*/
+.box-contact{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 200px;
+	margin-left: 0px;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.img-kamera img{
+	margin-bottom: 50px;
+	width: 300px;
+}
+.info-contact{
+	margin-left: 20px;
+}
+/*contactformular*/
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+input[type=submit] {
+	background-color: #04AA6D;
+	color: #272727;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+.container {
+	display: block;
+	border-radius: 5px;
+	background-color: grey;
+	padding: 50px;
+}
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media only screen and (min-width: 391px) {
+	.info-contact{
+		margin-left: 0px;	
+	}
+	.img-kamera img{
+		width: 550px;
+	}
+}
+@media only screen and (min-width:1024px) {
+	.img-kamera img{
+		margin-right: 200px;
+	}
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+/*Footer*/
+footer{
+	width: 100%;
+	border-top: solid 2px #272727;
+	overflow: hidden;
+}
+.social{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 50px;
+	margin-top: 20px;
+	margin-left: 42%;
+}
+.social img{
+	width: 60px;
+	padding: 2px;
+}
+@media only screen and (min-width:834px) {
+	.social{
+		margin-left: 46%;
+	}
+}
